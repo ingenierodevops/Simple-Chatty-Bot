@@ -33,17 +33,28 @@ def count():
 
 def test():
     print("Let's test your programming knowledge.")
-    # write your code here
-    print('Completed, have a nice day!')
+    print("Why do we use methods?")
+    print("""1. To repeat a statement multiple times.
+2. To decompose a program into several small subroutines.
+3. To determine the execution time of a program.
+4. To interrupt the execution of a program.""")
 
+    correcta = False
+    while correcta == False:
+        respuesta = input()
+        if respuesta == "2":
+            print('Completed, have a nice day!')
+            correcta = True
+        else:
+            print('Please,try again.')
 
 def end():
     print('Congratulations, have a nice day!')
 
 
-greet('Aid', '2020')  # change it as you need
+greet('Aide', '2021')  # change it as you need
 remind_name()
 guess_age()
 count()
-# ...
+test()
 end()
